@@ -42,7 +42,9 @@ class Login_Service {
 	 */
 	public function restrict_login_to_ips() {
 		// Bail if the user is trying to access password protected page.
-		if ( isset( $_POST['post_password'] ) && ! is_admin() ) { //phpcs:ignore
+		$action = isset( $_GET['action'] ) ? sanitize_key( wp_unslash( $_GET['action'] ) ) : '';
+
+		if ( isset( $_POST['post_password'] ) && ! is_admin() && 'postpass' === $action ) { //phpcs:ignore
 			return true;
 		}
 

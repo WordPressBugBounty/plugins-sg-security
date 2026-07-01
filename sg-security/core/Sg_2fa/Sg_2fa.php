@@ -460,7 +460,8 @@ class Sg_2fa {
 		if (
 			// If the 2FA is configured for the user.
 			1 == get_user_meta( $cookie_data[0], 'sg_security_2fa_configured', true ) && // phpcs:ignore
-			get_user_meta( $cookie_data[0], 'sgs_2fa_dnc_token', true ) === $cookie_data[1] // If there is already a cookie with that name and the name matches.
+			get_user_meta( $cookie_data[0], 'sgs_2fa_dnc_token', true ) === $cookie_data[1]  && // If there is already a cookie with that name and the name matches.
+			(int) $cookie_data[0] === (int) $user->ID // If the cookie ID matches the logging in user ID.
 		) {
 			return true;
 		}
