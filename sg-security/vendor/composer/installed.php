@@ -3,7 +3,7 @@
         'name' => 'siteground/sg-security',
         'pretty_version' => 'dev-develop',
         'version' => 'dev-develop',
-        'reference' => '866b342b625a5f2fde85c7ea4a23155fa89c6824',
+        'reference' => 'bd34eb1c269c7c940e435d7786d5c4023d6877a8',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -83,21 +83,10 @@
         'siteground/sg-security' => array(
             'pretty_version' => 'dev-develop',
             'version' => 'dev-develop',
-            'reference' => '866b342b625a5f2fde85c7ea4a23155fa89c6824',
+            'reference' => 'bd34eb1c269c7c940e435d7786d5c4023d6877a8',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'siteground/siteground-data' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '9716965f513427cc017f787b43531c437227021d',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../siteground/siteground-data',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
             'dev_requirement' => false,
         ),
         'siteground/siteground-emails' => array(

@@ -450,35 +450,6 @@
             "install-path": "../siteground/googleauthenticator"
         },
         {
-            "name": "siteground/siteground-data",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.siteground.com:wordpress/siteground-data.git",
-                "reference": "9716965f513427cc017f787b43531c437227021d"
-            },
-            "require": {
-                "siteground/siteground-helper": "master@dev"
-            },
-            "time": "2026-02-25T15:08:41+00:00",
-            "default-branch": true,
-            "type": "library",
-            "installation-source": "source",
-            "autoload": {
-                "psr-4": {
-                    "SiteGround_Data\\": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "Stanimir Stoyanov",
-                    "email": "stanimir.stoyanov@siteground.com"
-                }
-            ],
-            "install-path": "../siteground/siteground-data"
-        },
-        {
             "name": "siteground/siteground-emails",
             "version": "dev-master",
             "version_normalized": "dev-master",
